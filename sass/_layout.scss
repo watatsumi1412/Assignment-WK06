@@ -2,10 +2,6 @@
 @use "function";
 @use "mixins";
 
-/* ================= */
-/* HEADER */
-/* ================= */
-
 header {
     background: variables.$primary;
     color: white;
@@ -15,11 +11,6 @@ header {
 header h1 {
     letter-spacing: 2px;
 }
-
-
-/* ================= */
-/* HERO */
-/* ================= */
 
 .hero {
     display: grid;
@@ -66,11 +57,6 @@ header h1 {
     }
 }
 
-
-/* ================= */
-/* INFO + STATS */
-/* ================= */
-
 .info {
     display: grid;
     grid-template-columns: 1fr;
@@ -109,33 +95,38 @@ header h1 {
 .stats-box {
     background: variables.$secondary;
     color: white;
-    padding: function.spacing(2);
+    padding: function.spacing(3);
     text-align: center;
     border-radius: variables.$radius;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
     h3 {
         color: white;
+        margin-bottom: function.spacing(2);
     }
-
 
     .numbers {
         display: flex;
         justify-content: space-evenly;
-        margin-top: function.spacing(1);
-        font-size: 1.4rem;
-        font-weight: bold;
+        align-items: center;
+        gap: function.spacing(2);
+
+        div {
+            text-align: center;
+        }
+
+        .num {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #eee;
+        }
     }
 }
-
-
-/* ================= */
-/* CARDS */
-/* ================= */
 
 .cards {
     display: grid;
@@ -165,11 +156,6 @@ header h1 {
     object-fit: cover;
     border-radius: variables.$radius;
 }
-
-
-/* ================= */
-/* SEARCH SECTION */
-/* ================= */
 
 .search-section {
     padding: function.spacing(2);
@@ -205,11 +191,6 @@ header h1 {
     }
 }
 
-
-/* ================= */
-/* ARTICLE */
-/* ================= */
-
 .article {
     display: grid;
     grid-template-columns: 1fr;
@@ -241,10 +222,6 @@ header h1 {
         }
     }
 }
-
-/* ================= */
-/* FOOTER */
-/* ================= */
 
 .footer {
     background: variables.$dark;
@@ -293,11 +270,6 @@ p {
     font-size: 14px;
     color: #bbb;
 }
-
-
-/* ================= */
-/* TABLET */
-/* ================= */
 
 @media (min-width: 768px) {
 
