@@ -1,0 +1,42 @@
+@use "function";
+@use "variables";
+@use "mixins";
+
+%card-base {
+  background: white;
+  padding: function.spacing(1);
+  border-radius: variables.$radius;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card {
+  @extend %card-base;
+  text-align: center;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  button {
+    @include mixins.button;
+  }
+}
+
+.search-box {
+  @include mixins.flex-center;
+  flex-direction: row;
+  gap: function.spacing(1);
+
+  p {
+    padding: function.spacing(1);
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid variables.$accent;
+    border-radius: variables.$radius;
+  }
+
+  button {
+    @include mixins.button;
+  }
+}

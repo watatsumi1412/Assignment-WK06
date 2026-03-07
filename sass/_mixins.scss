@@ -1,0 +1,31 @@
+@use "variables";
+@use "function";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin container {
+  max-width: variables.$container;
+  margin: auto;
+  padding: function.spacing(2);
+}
+
+@mixin button {
+  background: variables.$primary;
+  color: white;
+  border: none;
+  padding: function.spacing(1) function.spacing(2);
+  border-radius: variables.$radius;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@mixin responsive($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
