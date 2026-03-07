@@ -214,16 +214,13 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: function.spacing(2);
+    margin-top: function.spacing(2);
 
-    .article-img {
-
-        img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: variables.$radius;
-        }
-
+    .article-img img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: variables.$radius;
     }
 
     .article-text {
@@ -235,14 +232,15 @@ header h1 {
             margin-bottom: function.spacing(1);
         }
 
-        p {
-            line-height: 1.6;
-            color: variables.$textdes;
+        h3 {
+            margin-bottom: function.spacing(1);
         }
 
+        p {
+            line-height: 1.6;
+        }
     }
 }
-
 
 /* ================= */
 /* FOOTER */
@@ -335,5 +333,10 @@ p {
 
      .footer-grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+     .article {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
