@@ -258,6 +258,11 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: function.spacing(2);
+    text-align: left;
+}
+
+.footer-grid div {
+    line-height: 1.6;
 }
 
 .footer-about h3,
@@ -296,29 +301,7 @@ p {
 /* TABLET */
 /* ================= */
 
-@include mixins.responsive(768px) {
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .article {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-}
-
-
-/* ================= */
-/* DESKTOP */
-/* ================= */
-
-@include mixins.responsive(1024px) {
+@media (min-width: 768px) {
 
     .container {
         max-width: 1400px;
@@ -350,4 +333,7 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
+     .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

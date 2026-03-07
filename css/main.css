@@ -241,6 +241,11 @@ header h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  text-align: left;
+}
+
+.footer-grid div {
+  line-height: 1.6;
 }
 
 .footer-about h3,
@@ -278,21 +283,6 @@ p {
 /* TABLET */
 /* ================= */
 @media (min-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .article {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-  .footer-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-/* ================= */
-/* DESKTOP */
-/* ================= */
-@media (min-width: 1024px) {
   .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -315,6 +305,9 @@ p {
   }
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .card {
