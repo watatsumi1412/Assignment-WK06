@@ -23,9 +23,3 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
-@mixin responsive($size) {
-  @media (min-width: $size) {
-    @content;
-  }
-}
