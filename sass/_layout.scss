@@ -235,15 +235,16 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: function.spacing(2);
-    text-align: left;
+    text-align: center;
 }
 
 .footer-grid div {
     line-height: 1.6;
+    text-align: center;
 }
 
 .footer-about h3,
-p {
+.footer-about p {
     color: #ddd;
 }
 
@@ -260,10 +261,19 @@ p {
     color: #ddd;
 }
 
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-social .social-icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: function.spacing(1);
     font-size: 20px;
+    width: 100%;
 }
 
 .copyright {
@@ -316,8 +326,7 @@ p {
 
     .search-section {
         padding: function.spacing(2);
-        display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
     }
