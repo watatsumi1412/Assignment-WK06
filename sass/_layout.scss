@@ -69,7 +69,6 @@ header h1 {
     background: white;
     border-left: 6px solid variables.$accent;
     border-radius: variables.$radius;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,9 +99,11 @@ header h1 {
     text-align: center;
     border-radius: variables.$radius;
 
+
     h3 {
         color: white;
         margin-bottom: function.spacing(2);
+            justify-content: flex-start;
     }
 
     .numbers {
@@ -307,7 +308,7 @@ header h1 {
     }
 
     .cards {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .footer-grid {
@@ -316,7 +317,7 @@ header h1 {
 
     .article {
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        align-items: stretch;
     }
 
     .search-section {

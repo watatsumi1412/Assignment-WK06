@@ -117,6 +117,7 @@ header h1 {
 .stats-box h3 {
   color: white;
   margin-bottom: 20px;
+  justify-content: flex-start;
 }
 .stats-box .numbers {
   display: flex;
@@ -300,14 +301,14 @@ header h1 {
     min-height: 150px;
   }
   .cards {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
   }
   .article {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: stretch;
   }
   .search-section {
     padding: 20px;
