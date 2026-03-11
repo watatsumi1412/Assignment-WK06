@@ -175,7 +175,6 @@ header h1 {
   flex-direction: column;
 }
 .search-section .search-box {
-  display: flex;
   gap: 10px;
 }
 .search-section .search-box p {
@@ -316,7 +315,7 @@ header h1 {
   }
   .search-section {
     padding: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
@@ -326,23 +325,11 @@ header h1 {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card {
   text-align: center;
   transition: 0.3s;
 }
 .card:hover {
   transform: scale(1.05);
-}
-.card button {
-  background: #4b2e2b;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .search-box {

@@ -166,7 +166,6 @@ header h1 {
     flex-direction: column;
 
     .search-box {
-        display: flex;
         gap: function.spacing(1);
 
         p {
@@ -326,7 +325,7 @@ header h1 {
 
     .search-section {
         padding: function.spacing(2);
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
